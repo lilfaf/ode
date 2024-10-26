@@ -17,7 +17,10 @@ defmodule OdeWeb.Router do
   scope "/", OdeWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    live "/", TerminalLive
+
+    # TODO: remove page controller
+    # get "/", PageController, :home
   end
 
   # Other scopes may use custom stacks.
