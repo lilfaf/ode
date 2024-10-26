@@ -7,7 +7,9 @@ defmodule OdeWeb.TerminalLive do
 
   def render(assigns) do
     ~H"""
-    <div id="terminal" phx-hook="Terminal" class="w-screen h-screen [&_.terminal]:!h-full"></div>
+    <div class="w-screen h-screen bg-black p-3">
+      <div id="terminal" phx-hook="Terminal" class="w-full h-full [&_.terminal]:!h-full"></div>
+    </div>
     """
   end
 end
