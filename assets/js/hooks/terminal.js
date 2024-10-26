@@ -34,12 +34,26 @@ const TerminalHook = {
   mounted() {
     this.term = new Terminal({
       cursorBlink: true,
-      fontFamily: "Iosevka",
+      fontFamily: "Iosevka, monospace",
       fontSize: 16,
-      theme: {
-        background: '#000000',    // Pure black background
-        foreground: '#ffffff',    // White text
-        cursor: '#ffffff',        // White cursor
+      theme: {                    // Original Catppuccin theme
+        background: '#292c3c',    // Mantle
+        foreground: '#c6d0f5',    // Text
+        cursor: '#f2d5cf',        // Rosewater
+        black: '#292c3c',         // Mantle
+        red: '#e78284',
+        green: '#a6d189',
+        blue: '#8caaee',
+        magenta: '#f4b8e4',       // Pink
+        cyan: '#99d1db',          // Sky
+        white: '#c6d0f5',
+        brightBlack: '#626880',   // Surface2
+        brightRed: '#e78284',
+        brightGreen: '#a6d189',
+        brightBlue: '#8caaee',
+        brightMagenta: '#f4b8e4', // Pink
+        brightCyan: '#99d1db',    // Sky
+        brightWhite: '#c6d0f5',
       }
     })
 
